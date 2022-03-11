@@ -48,22 +48,26 @@ Se realizará una división de los datos de entrenamiento, validación y prueba 
 	* **¿Qué datos esperamos? Datos en bruto en las fuentes de datos del cliente (por ejemplo, archivos on-prem, SQL, Hadoop on-prem, etc.)**  
 	Archivos .csv, .xls y/o .xlsx con información de los catalogos trimestrales de información financiera e informes ejecutivos mensuales de Preguntas, Quejas, Reclamos y/o 	Denuncias (PQRD) formuladas por los usuarios. Los archivos se encuentran disponibles en la sección *Estadisticas de los Sujetos Vigilados* de las [Cifras y Estadisticas de la SNS](https://www.supersalud.gov.co/es-co/nuestra-entidad/cifras-y-estadisticas "Supersalud: Cifras y Estadisticas").
 * **Movimiento de datos desde on-prem a Azure utilizando ADF u otras herramientas de movimiento de datos (Azcopy, EventHub, etc.) para mover**
-  * Todos los datos, 
-  * después de una preagregación en el sistema local,
-  * datos muestreados suficientes para la modelización 
+  * Los datos se descargaran y se transformaran para su uso tanto de entrenamiento como validación
+  * Los datos se copiarán al servidor facilitado para el desarrollo del curso
+  * Se realizará el entrenamiento y validación del modelo en el servidor. 
+  * El modelo entrenado se copiará a los computadores locales para realizar su despliegue a traves de una API.
 
 * **Qué herramientas y recursos de almacenamiento/análisis de datos se utilizarán en la solución, por ejemplo**
-  * ASA para la agregación de flujos
-  * HDI/Hive/R/Python para la construcción de características, agregación y muestreo
-  * AzureML para el modelado y la operacionalización del servicio web
-* ¿Cómo se consumirá la puntuación o el servicio(s) web operacionalizado(s) (RRS y/o BES) en el flujo de trabajo empresarial del cliente? Si procede, escriba el pseudocódigo de las API de las llamadas al servicio web.
-  * ¿Cómo utilizará el cliente los resultados del modelo para tomar decisiones?
-  * Canalización del movimiento de datos en producción
-  * Haga un diagrama de 1 diapositiva que muestre el flujo de datos de extremo a extremo y la arquitectura de decisiones
-    * Si hay un cambio sustancial en el flujo de trabajo del negocio del cliente, haga un diagrama antes/después que muestre el flujo de datos.
+  * Microsoft Excel® y Microsoft Power BI® para la transformación de los datos.
+  * Python con la libreria TensorFlow para el diseño, entrenamiento y validación del modelo
+* **¿Cómo se consumirá la puntuación o el servicio(s) web operacionalizado(s) (RRS y/o BES) en el flujo de trabajo empresarial del cliente? Si procede, escriba el pseudocódigo de las API de las llamadas al servicio web.**
+  * **¿Cómo utilizará el cliente los resultados del modelo para tomar decisiones?**
+  	El cliente emitirá recomendaciones a sus sujetos de control para prevenir contratiempos tanto a los usuarios del Sistema General de Seguridad Social en Salud (SGSSS) y evitar un detrimento de los recusos de la salud en Colombia
+  * **Canalización del movimiento de datos en producción**
+  	
+  * **Haga un diagrama de 1 diapositiva que muestre el flujo de datos de extremo a extremo y la arquitectura de decisiones**
+  
+  * **Si hay un cambio sustancial en el flujo de trabajo del negocio del cliente, haga un diagrama antes/después que muestre el flujo de datos.**
 
 ## Comunicación
 * **¿Cómo nos mantendremos en contacto? ¿Reuniones semanales?**
 Se realizará, por lo menos, una reunión semanal de una hora, exclusiva para coordinar y desarrollar el proyecto. Las reuniones se realizaran mediante la plataforma Microsoft Teams® en el horario acordado por el personal que no se cruce con las labores propias de su trabajo como funcionario.
 * **¿Quiénes son las personas de contacto de ambas partes?**
+El ingeniero Carlos Arturo Acosta Herrera, al hacer parte tanto del grupo desarrollador como del cliente, fungirá funciones como el enlace entre las partes.
 
