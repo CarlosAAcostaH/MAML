@@ -1,13 +1,5 @@
 # Definiciones de datos y características
 
-Este documento proporciona un eje central para las fuentes de datos brutos, los datos procesados/transformados y los conjuntos de características. En el informe de resumen de datos se ofrecen más detalles de cada conjunto de datos. 
-
-Para cada dato, se proporciona un informe individual en el que se describe el esquema de datos, el significado de cada campo de datos y otra información útil para entender los datos. Si el conjunto de datos es el resultado del procesamiento/transformación/ingeniería de características de conjuntos de datos existentes, también se proporcionan los nombres de los conjuntos de datos de entrada y los enlaces a los scripts que se utilizan para realizar la operación. 
-
-Para cada conjunto de datos, también se proporcionan los enlaces a los conjuntos de datos de muestra en el directorio _**Data**_. 
-
-Para facilitar la modificación de este informe, se incluyen en esta página enlaces a marcadores de posición, por ejemplo, un enlace al conjunto de datos 1, pero sólo son marcadores de posición que apuntan a una página inexistente. Deben modificarse para que apunten a la ubicación real.
-
 ## Fuentes de datos brutos
 
 |Nombre del conjunto de datos|Ubicación original|Ubicación de destino|Herramientas de movimiento de datos/Scripts|Enlace al informe |
