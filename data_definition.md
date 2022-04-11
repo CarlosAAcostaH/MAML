@@ -6,36 +6,42 @@ Para cada dato, se proporciona un informe individual en el que se describe el es
 
 Para cada conjunto de datos, también se proporcionan los enlaces a los conjuntos de datos de muestra en el directorio _**Data**_. 
 
-Para facilitar la modificación de este informe, se incluyen en esta página enlaces a marcadores de posición, por ejemplo, un enlace al conjunto de datos 1, pero sólo son marcadores de posición que apuntan a una página inexistente. Deben modificarse para que apunten a la ubicación real.**_
+Para facilitar la modificación de este informe, se incluyen en esta página enlaces a marcadores de posición, por ejemplo, un enlace al conjunto de datos 1, pero sólo son marcadores de posición que apuntan a una página inexistente. Deben modificarse para que apunten a la ubicación real.
 
 ## Fuentes de datos brutos
 
-| Nombre del conjunto de datos Ubicación original Ubicación de destino Herramientas de movimiento de datos/Scripts Enlace al informe
-| ---:| ---: | ---: | ---: | -----: |
-| Conjunto de datos 1: Breve descripción de su ubicación original: Breve descripción de su ubicación de destino: [script1.py](link/to/python/script/file/in/Code): [Informe del conjunto de datos 1](link/to/report1)
-| Dataset 2 | Breve descripción de su ubicación original | Breve descripción de su ubicación de destino | [script2.R](link/to/R/script/file/in/Code) | [Dataset 2 Report](link/to/report2)|
+|Nombre del conjunto de datos|Ubicación original|Ubicación de destino|Herramientas de movimiento de datos/Scripts|Enlace al informe |
+| --- | --- | --- | --- | --- |
+| Catalogos de información financiera | [Página web de la SNS](supersalud.gov.co) | Equipo local | Descarga manual de los libros de Microsoft Excel | [Informe]()
+| Base de datos única de afiliados [BDUA](bdua.gov.co) | Confidencial, administrada por la [ADRES](adres.gov.co)| - | No se realiza copia de la base de datos al repositorio por su caracter confidencial | [Informe]()
 
-* Resumen del conjunto de datos1. <br /> Proporciona un breve resumen de los datos, como la forma de acceder a los datos. La información más detallada debe figurar en el informe del conjunto de datos 1.
-* Resumen del conjunto de datos 2. <Proporcionar un breve resumen de los datos, como la forma de acceder a los datos. En el informe del conjunto de datos 2 debe figurar información más detallada. 
+
+* **Resumen de los Catalogos de información financiera**. <br> Contienen los planes únicos de cuentas de las EAPB de manera trimestral como tablas cruzadadas entre cada cuenta y entidades.
+
+* **Resuemen de la BDUA**. <br> La BDUA contiene un registro por cada persona afiliada al sistema general de seguridad social en salud en Colombia y contiene campos de identificación y datos personales (nombre, documento, fecha de nacimiento, sitio de residencia entre otros), entidad a la cual se encuentra afilidado, estado de afiliación, etc.
 
 ## Datos procesados
 | Nombre del conjunto de datos procesado | Conjunto(s) de datos de entrada | Herramientas de procesamiento de datos/Scripts | Enlace al informe
-| ---:| ---: | ---: | ---: | 
-| Conjunto de datos procesado 1: [Conjunto de datos 1] (enlace/al conjunto de datos 1/informe), [Conjunto de datos 2] (enlace/al conjunto de datos 2/informe) [Script de Python 1.py] (enlace/al script de Python/archivo/in/código) [Informe del conjunto de datos procesado 1] (enlace/al informe 1)
-| Conjunto de datos procesado 2 | [Conjunto de datos2](enlace/a/conjunto de datos2/informe) |[script2.R](enlace/a/R/script/archivo/in/Code) | [Informe del conjunto de datos procesado 2](enlace/a/informe2)|
-* Resumen de los datos procesados1. <br /> Proporcione un breve resumen de los datos procesados, como por ejemplo, por qué quiere procesar los datos de esta manera. La información más detallada sobre los datos procesados debe estar en el Informe de Datos Procesados1.>
-* Resumen de datos procesados2. <Presente un breve resumen de los datos procesados, como por ejemplo, por qué quiere procesar los datos de esta manera. La información más detallada sobre los datos procesados debería estar en el Informe de Datos Procesados2.> 
+| :---:| :---: | :---: | :--- | 
+|Listado de cuentas|Catalogos de información financiera|Organización manual de los datos debido a variaciones de formato entre los Catalogos de información financiera Procesamiento mediante Microsoft Power BI|[Informe]()
+|Resumen de afiliados BDUA|BDUA|Procesamiento mediente SQL, Microsoft Excel, Microsoft Power Pivot y Microsoft Power BI (Bajo confidencialidad de la DIARI)|[Informe]()
+* **Listado de cuentas**. Es la organización de todas las cuentas reportadas trimestralmente en la [SNS](supersalud.gov.co) con los campos año, trimestre, NIT de la EAPB, número de cuenta y valor.
+* **Resumen de afiliados BDUA**. Indica la cantidad de afiliados clasificados por departamento de afiliación, género o sexo, grupo etario, régimen y EAPB
 
 ## Conjuntos de características
 
 | Nombre del conjunto de características | Conjunto(s) de datos de entrada | Herramientas/Scripts de ingeniería de características | Enlace al informe
-| ---:| ---: | ---: | ---:  
-| Conjunto de características 1: [Conjunto de datos 1] (enlace a conjunto de datos 1/informe), [Conjunto de datos 2 procesado] (enlace a conjunto de datos 2/informe), [R_Script 2.R] (enlace a R/script/file/in/Code), [Informe del conjunto de características 1] (enlace a informe 1).
-| Conjunto de características 2 | [Conjunto de datos procesado2](enlace/a/conjunto de datos2/informe) |[SQL_Script2.sql](enlace/a/sql/script/archivo/in/Code) | [Informe del conjunto de características 2](enlace/a/informe2)|
+| :---:| :---: | :---: | :---  
+| Resultados financeros | Listado de cuentas | [Resultados Financieros.pbix]()|[Informe]()
+| Número de afiliados | Resumen de afiliados BDUA|Procesamiento con Microsoft Excel|[Informe]()
 
-* Resumen del conjunto de características1. <br /> Proporcione una descripción detallada del conjunto de características, como el significado de cada una de ellas. La información más detallada sobre el conjunto de características debe figurar en el informe del conjunto de características 1.
-* Resumen del conjunto de características 2. <Proporcione una descripción detallada del conjunto de características, como el significado de cada una de ellas. En el informe del conjunto de características 2 debe figurar información más detallada sobre el conjunto de características. 
+* **Resultados financieros**. Corresponden a variables financieras de cada entidad tales como: 
+    * Ingresos
+    * Gastos
+    * Costos
+    * Patrimonio
+    * Utilidad bruta
+    * Utilidad neta
+    * Siniestralidad contable
 
-
-
-
+* **Número de afiliados**. Correspondiente a la suma de afiliados de toda una EAPB descartando el resto de campos reportados en la BDUA
