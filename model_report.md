@@ -15,17 +15,20 @@ Un modelo de clasificación no supervisado.
 ## Datos
 * Fuentes:
   *BaseDatosMAML_Pry.xlsx: Tabla de información de cifras estadísticas de la SNS. los campos son los siguientes:
-    Año
-    Trim
-    Nombre EAPB
-    Ingresos
-    Costos
-    Gastos
-    Patrimonio
-    Utilidad Bruta
-    Utilidad Neta
-    Siniestralidad
-    Número de Afiliados
+
+|Campo|  
+|---|
+|Año|
+|Trim|
+|Nombre EAPB|
+|Ingresos|
+|Costos|
+|Gastos|
+|Patrimonio|
+|Utilidad Bruta|
+|Utilidad Neta|
+|Siniestralidad|
+|Número de Afiliados|
     
 * Selección: Datos desde primer trimestre de 2018 al cuarto trimestre de 2020
 * Estadísticas: 43 Entidades Entidades Administradoras de Planes de Beneficios de Salud (EAPB)
@@ -78,6 +81,8 @@ Se realiza una ejecución local debido a que son datos sensibles.
 * En la revisión de resultados se decide usar el modelo configurado en 4 clusters.
 
 ![Clusters Modelo Final](https://user-images.githubusercontent.com/101413090/164131205-6aeafc73-1d7e-4584-92cc-d0ed14fb372b.png)
+
+*Se puede obsevar los clustes usando un grafico de tres dimensiones enfocado a la Utilidad Neta, la Siniestralidad, y el número de afiliados.
 
 El código de python usado se encuentra en: [Modelo_Final.py](https://github.com/CarlosAAcostaH/MAML/blob/main/Modelo_Final.py)
 
