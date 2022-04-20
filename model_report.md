@@ -44,15 +44,28 @@ Un modelo de clasificación no supervisado.
     Utilidad Neta            int64
     Siniestralidad         float64
     Número de Afiliados      int64
+## Arqutectura
+
+Se realiza una ejecución local debido a que son datos sensibles.
 
 ## Algoritmo
-* Descripción o imágenes del gráfico de flujo de datos
-  ## Si es AzureML, enlace a:
-    * Experimento de entrenamiento
-    * Flujo de trabajo de puntuación
-* ¿Qué aprendiz(es) se utilizó(n)?
-* Hiperparámetros del aprendiz
+* Se utiliza un algoritmo no supervisado Kmedias para clasificar de manera trimestral a las entidades con el fin de efocar los recusos para la IVC. Los campos utilizados para el modelo fueron los siguientes:
+    Utilidad Neta            int64
+    Siniestralidad         float64
+    Número de Afiliados      int64
 
 ## Resultados
-* Gráficos ROC/Lift, AUC, R^2, MAPE, según proceda
-* Gráficos de rendimiento para los barridos de parámetros, si procede
+* Métrica de evaluación usada para calcular el número de clusters fue suma del error al cuadrado (SSE).
+Num. Clusters SSE
+1    1.2032992573181158e+25
+2    5.784851127505816e+24
+3    2.852664430997615e+24
+4    1.6249980121034142e+24
+5    1.16751799728549e+24
+6    7.997256040165846e+23
+7    5.460403211063597e+23
+8    3.740920109844167e+23
+9    2.9200992203086773e+23
+
+* En la revisión de resultados se decide usar el modelo configurado en 4 clusters.
+
