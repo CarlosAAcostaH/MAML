@@ -34,7 +34,7 @@ Trimestralmente se emitirá la categoriación de las EAPB con la descripción de
 * **¿Cuáles son los objetivos cualitativos? (por ejemplo, reducir la fuga de usuarios)**  
 Generar un categorizador de EAPB de acuerdo con la información financiera y número de usuarios de un trimestre.
 * **¿Cuáles son las métricas cuantificables (por ejemplo, reducir la fracción de usuarios con 4 semanas de inactividad)**    
-Cohesión de los clúster de acuerdo con la suma de cuadrados internos ([Sum of Squared Within, SSW](https://disi.unal.edu.co/~eleonguz/cursos/mda/presentaciones/validacion_Clustering.pdf)).
+Cohesión de los clúster de acuerdo con la suma del error cuadrado. ([SSE](https://disi.unal.edu.co/~eleonguz/cursos/mda/presentaciones/validacion_Clustering.pdf)). SSE se define como la suma de la distancia al cuadrado entre el centroide y cada miembro del clúster.
 * **Cuantificar qué mejora de los valores de la métrica es útil para el escenario del cliente (por ejemplo, reducir la fracción de usuarios con inactividad de 4 semanas en un 20%)**  
 * **¿Cuál es el valor de referencia (actual) de la métrica? (por ejemplo, fracción actual de usuarios con inactividad de 4 semanas = 60%)**  
 Actualmente, no existe categorizador de EAPB, por lo tanto, no existe un valor de refencia de la métrica.
