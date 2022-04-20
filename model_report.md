@@ -1,3 +1,4 @@
+![Clusters Modelo Final](https://user-images.githubusercontent.com/101413090/164131205-6aeafc73-1d7e-4584-92cc-d0ed14fb372b.png)
 #Informe del modelo final
 Informe que describe el modelo final que se entregará - normalmente compuesto por uno o más de los modelos construidos durante la vida del proyecto_.
 
