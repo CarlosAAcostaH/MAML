@@ -74,7 +74,7 @@ El código de python usado se encuentra en: [Modelo_Base.py](https://github.com/
 
 ## Comprensión del modelo
 
-* Importancia de las variables: Si bien todas las variables son importantes para el análsis unas dependen de otras. Un ejmplo es la utilidad neta que depende de los ingresos, los costos, los gastos y la utilidad bruta.
+* Importancia de las variables: Si bien todas las variables son importantes para el análsis unas dependen de otras. Un ejmplo es la utilidad neta que depende de los ingresos, los costos, los gastos.
 
 ## Conclusión y debates para los próximos pasos
 
