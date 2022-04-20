@@ -74,11 +74,11 @@ El código de python usado se encuentra en: [Modelo_Base.py](https://github.com/
 
 ## Comprensión del modelo
 
-* Importancia de las variables: Si bien todas las variables son importantes para el análsis unas dependen de otras. Un ejmplo es la utilidad neta que depende de los ingresos, los costos, los gastos.
+* Importancia de las variables: Si bien todas las variables son importantes para el análsis unas dependen de otras. Un ejmplo es la utilidad neta que depende de los ingresos y los costos.
 
 ## Conclusión y debates para los próximos pasos
 
-* Conclusión sobre la evaluación de la viabilidad de la tarea de aprendizaje automático: Se verá analiza la posibilidad de disminuir las variables de clasificación del modelo.
+* Conclusión sobre la evaluación de la viabilidad de la tarea de aprendizaje automático: Se analiza la posibilidad de disminuir las variables de clasificación del modelo.
 
 * ¿Qué otras características pueden generarse a partir de los datos actuales?: Por ahora ninguna.
 
