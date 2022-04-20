@@ -11,8 +11,6 @@ Informe que describe el modelo final que se entregará - normalmente compuesto p
 Un modelo de clasificación no supervisado.
 
 ## Descripción de la solución
-* Arquitectura simple de la solución (fuentes de datos, componentes de la solución, flujo de datos)
-* ¿Cuál es la salida?
 
 ## Datos
 * Fuentes:
@@ -34,29 +32,37 @@ Un modelo de clasificación no supervisado.
 
 ## Características
 * Lista de características brutas de los campos:
-    Año                      int64
-    Trim                    object
-    Nombre EAPB             object
-    Ingresos                 int64
-    Costos                   int64
-    Gastos                   int64
-    Patrimonio               int64
-    Utilidad Bruta           int64
-    Utilidad Neta            int64
-    Siniestralidad         float64
-    Número de Afiliados      int64
+
+|Campo|Tipo|
+|---|---:|
+|Año|int64|
+|Trim|object|
+|Nombre EAPB|object|
+|Ingresos|int64|
+|Costos|int64|
+|Gastos|int64|
+|Patrimonio|int64|
+|Utilidad Bruta|int64|
+|Utilidad Neta|int64|
+|Siniestralidad|float64|
+|Número de Afiliados|int64|
+
 ## Arqutectura
 
 Se realiza una ejecución local debido a que son datos sensibles.
 
 ## Algoritmo
 * Se utiliza un algoritmo no supervisado Kmedias para clasificar de manera trimestral a las entidades con el fin de efocar los recusos para la IVC. Los campos utilizados para el modelo fueron los siguientes:
-    Utilidad Neta            int64
-    Siniestralidad         float64
-    Número de Afiliados      int64
+
+|Campo|Tipo|
+|---|---:|
+|Utilidad Neta|int64|
+|Siniestralidad|float64|
+|Número de Afiliados|int64|
 
 ## Resultados
 * Métrica de evaluación usada para calcular el número de clusters fue suma del error al cuadrado (SSE).
+
 |Num.|Clusters SSE|
 |---|---:|
 |1 | 1.2032992573181158e+25|
@@ -74,3 +80,7 @@ Se realiza una ejecución local debido a que son datos sensibles.
 ![Clusters Modelo Final](https://user-images.githubusercontent.com/101413090/164131205-6aeafc73-1d7e-4584-92cc-d0ed14fb372b.png)
 
 El código de python usado se encuentra en: [Modelo_Final.py](https://github.com/CarlosAAcostaH/MAML/blob/main/Modelo_Final.py)
+
+## Salidas
+
+Archivo de Excel llamado 'Modelo_Final.xlsx' el cual tiene los cluster de cada registro.
