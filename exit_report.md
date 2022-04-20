@@ -40,9 +40,6 @@ La categorización se realiza mediante un k-means usando las variables Utilidad 
 
 ## Beneficios
 	
-### Beneficio de la empresa (sólo interno. Compruebe si quiere compartir esto con su cliente)
-<¿Qué ganó nuestra empresa con este compromiso? ROI, ingresos, etc.
-
 ### Beneficio para el cliente
 La CDSS puede identificar las EAPB a las cuales debe aumentar la IVC, ergo, puede disminuir el riesgo de perdidas de los recursos del SGSSS y aumentar la productividad de las auditorias a realizar.
 
